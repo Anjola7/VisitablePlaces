@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency Numbers</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .carousel-item img {
+            width: 100vw; /* 100% e gjerësisë së dritares */
+            height: 100vh; /* 100% e lartësisë së dritares */
+            object-fit: cover; /* Imazhi të mbushë zonën pa deformuar */
+        }
+        .carousel-inner {
+            height: 100vh; /* Siguron që karuseli të mbushë të gjithë lartësinë e ekranit */
+        }
+        .carousel-caption {
+            bottom: 20px; /* Pozita e përmbajtjes të jetë më lart për të lejuar më shumë hapësirë për imazhin */
+            text-align: center; /* Qëndron në qendër */
+            color: #ffffff; /* Ngjyra e shkrimit në të bardhë për kontrast të mirë */
+        }
+        .carousel-caption h5 {
+            font-size: 4rem; /* Madhësia e madhe për titujt */
+            font-weight: bold; /* Thekson titujt me shkronja të trasha */
+        }
+        .carousel-caption p {
+            font-size: 2rem; /* Madhësia e shkrimit për tekstin */
+            font-weight: semi-bold; /* Një peshë mesatare për tekstin */
+        }
+        .carousel-caption a {
+            color: #ffffff; /* Ngjyra e shkrimit të lidhjeve në të bardhë */
+            text-decoration: underline; /* Nënvizo lidhjen */
+        }
+    </style>
+</head>
+<body>
+
+<div id="emergencyCarousel" class="carousel slide mt-5">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="uploads/Policia_Shtetit-780x439.png" class="d-block w-100" alt="Policia">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Policia</h5>
+                <p>Numri i emergjencës: <a href="tel:129">129</a></p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="uploads/delux_ambulance.png" class="d-block w-100" alt="Ambulanca">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Ambulanca</h5>
+                <p>Numri i emergjencës: <a href="tel:127">127</a></p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="uploads/zjarrefiksja.jpg" class="d-block w-100" alt="Zjarrfikësit">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Zjarrfikësja</h5>
+                <p>Numri i emergjencës: <a href="tel:128">128</a></p>
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#emergencyCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#emergencyCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
